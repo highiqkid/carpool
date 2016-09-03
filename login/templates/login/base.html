@@ -1,0 +1,28 @@
+{% load staticfiles %}}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+  	<title> {% block title %}}Login {% endblock %}</title>
+	<link href="{% static 'login/static_files/bootstrap-social.css'%}" rel="stylesheet" >
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="{% static 'login/static_files/assets/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'login/static_files/assets/css/font-awesome.css' %}" rel="stylesheet">
+    <link href="{% static 'login/static_files/assets/css/docs.css' %}" rel="stylesheet" >
+
+	
+  </head>
+  
+  <body>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </body>
+</html>
+
